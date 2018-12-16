@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-dark elegant-color scrolling-navbar">
+  <a class="navbar-brand" href="#">Musixx</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item<% if(activeLink == 0){ %> active <% } %>">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item<% if(activeLink == 1){ %> active <% } %>">
+        <a class="nav-link" href="/album">Albums</a>
+      </li>
+      <li class="nav-item<% if(activeLink == 2){ %> active <% } %>">
+        <a class="nav-link" href="/songs">Songs</a>
+      </li>
+      <li class="nav-item<% if(activeLink == 3){ %> active <% } %>">
+        <a class="nav-link" href="#">Go Online</a>
+      </li>
+    </ul>
+  </div>
+  <form class="form-inline my-2 my-lg-0 ml-auto">
+    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-white btn-md my-2 my-sm-0 ml-3" type="submit">Search</button>
+  </form>
+  <ul class="navbar-nav ml-3">
+    <li class="nav-item">
+
+      <a class="nav-link" href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>Add Album</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+    </li>
+
+  </ul>
+</nav>

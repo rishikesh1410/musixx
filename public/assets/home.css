@@ -1,0 +1,32 @@
+body{
+  background-color: rgb(230,230,230);
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+.album{
+  margin: 5px;
+  padding: 10px;
+}
+.buttonn{
+  background-color: #fff;
+  color : black;
+  border : 1px solid #4B515D;
+  border-radius: 25px;
+  padding : 10px 20px;
+  font-size: 13px;
+}
+.buttonn:hover{
+  background-color: #4B515D;
+  color : #fff;
+}
+.iconn{
+  background-color: #fff;
+  color : black;
+  border : 1px solid #4B515D;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 12px;
+}
+.iconn:hover{
+  background-color: #4B515D;
+  color : #fff;
+}

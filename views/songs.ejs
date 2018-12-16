@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Songs | Musixx</title>
+    <% include partials/cssfiles.ejs %>
+    <link rel="stylesheet" href="/assets/home.css">
+  </head>
+  <body>
+    <% include partials/nav.ejs %>
+    <h2 class="ml-5 mt-3">All Songs</h2><br>
+    <div class="container">
+      <table class="table table-hover">
+        <thead class="grey lighten-1">
+          <tr>
+            <th scope="col">Song title</th>
+            <th scope="col">Artist</th>
+            <th scope="col">Audio file</th>
+            <th scope="col">Album</th>
+            <th scope="col">Favourite</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(let i=0;i<4;i++){ %>
+          <tr>
+            <th scope="row">Song name</th>
+            <td>Artist name</td>
+            <td>Audio file</td>
+            <td>Album name</td>
+            <td>Yes</td>
+          </tr>
+          <% } %>
+        </tbody>
+      </table>
+
+    </div>
+  </body>
+  <% include partials/jsfiles.ejs %>
+</html>

@@ -2,14 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Home | Musixx</title>
+    <title>Album | Musixx</title>
     <% include partials/cssfiles.ejs %>
     <link rel="stylesheet" href="/assets/home.css">
   </head>
   <body>
     <% include partials/nav.ejs %>
-
-    <h2 class="mt-3 ml-5">Rishikesh's Albums</h2><br>
+    <h2 class="mt-3 ml-5">Favourite Albums</h2><br>
     <div class="container">
       <div class="row">
         <% for(var i=0;i<3;i++){  %>
@@ -43,33 +42,40 @@
 
       </div>
     </div>
-    <h2 class="ml-5 mt-3">Favourite Songs</h2><br>
+    <h2 class="mt-3 ml-5">Most Viewed Albums</h2><br>
     <div class="container">
-      <table class="table table-hover">
-        <thead class="grey lighten-1">
-          <tr>
-            <th scope="col">Song title</th>
-            <th scope="col">Artist</th>
-            <th scope="col">Audio file</th>
-            <th scope="col">Album</th>
-            <th scope="col">Favourite</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% for(let i=0;i<4;i++){ %>
-          <tr>
-            <th scope="row">Song name</th>
-            <td>Artist name</td>
-            <td>Audio file</td>
-            <td>Album name</td>
-            <td>Yes</td>
-          </tr>
-          <% } %>
-        </tbody>
-      </table>
+      <div class="row">
+        <% for(var i=0;i<3;i++){  %>
+        <!-- Card -->
+        <div class="card col-md-3 album">
 
+          <!-- Card image -->
+          <div class="view overlay">
+            <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+
+          <!-- Card content -->
+          <div class="card-body">
+
+            <!-- Title -->
+            <h4 class="card-title">Album title</h4>
+            <!-- Text -->
+            <p class="card-text">Artist name</p>
+            <!-- Button -->
+            <a href="/albumDetails/album<%= i %>" class="btn buttonn">View details</a>
+            <i class="fa fa-star-o iconn" aria-hidden="true"></i>
+
+          </div>
+
+        </div>
+        <!-- Card -->
+        <% } %>
+
+      </div>
     </div>
-    <% include partials/footer.ejs %>
   </body>
   <% include partials/jsfiles.ejs %>
 </html>
